@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous"
+  />
+  <style>
+    .profile-section {
+      position: fixed;
+      margin-left: -40px;
+      z-index: 100;
+      padding: 2rem;
+      width: 15rem;
+      background-color: #747373;
+      color: #fff;
+      min-height: 100vh;
+    }
+    body{
+        background-color: #020617;
+    }
+
+    .content {
+      margin-left: 280px;
+      padding: 2rem;
+    }
+    #write:hover {
+      background-color: #020617;
+    }
+    #fill:hover {
+      background-color: #020617;
+    }
+    #home:hover {
+      text-decoration: underline;
+    }
+    #logout:hover {
+      background-color: red;
+    }
+    #blogsec {
+      margin-left: 200px;
+    }
+
+    #background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  </style>
+  <body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
+      <a class="navbar-brand mx-3 mx-lg-5" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="25"
+          fill="currentColor"
+          class="bi bi-megaphone-fill"
+          viewBox="0 0 16 16"
+        >
+          <!-- SVG path code -->
+        </svg>
+        <img src="img/sensio-logo.png" alt="logo" width="30">
+        <b class="text-body"> SENSIO</b>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 text-center">
+          <li class="nav-item">
+
+          </li>
+        </ul>
+
+        <!-- Search Bar -->
+        <form class="d-flex ">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search a Song"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <section class="mt-5 mx-5 bg-dark">
+      <main class="d-flex flex-nowrap bg-dark">
+        <div
+          class="profile-section d-flex flex-column flex-shrink-0 p-3 text-bg-dark text-center"
+        >
+          <div class="profile-details">
+            <img
+              src="img/2x2picture.jpg"
+              alt=""
+              width="100"
+              height="100"
+              class="rounded-circle me-2"
+            />
+            <h3 class="text-white">CLarence Vince Razo</h3>
+            <p class="text-white">Age: 19</p>
+          </div>
+          <hr />
+          <div class="ml-2">
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li>
+                <a href="#" class="nav-link text-white" id="write"> Home </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white" id="fill"> Search </a>
+              </li>
+              <li>
+                <a href="#pop" class="nav-link text-white" id="fill"> Discover </a>
+              </li>
+              <li>
+                <a href="#pops" class="nav-link text-white" id="fill"> Albums </a>
+              </li>
+              <li>
+                <a href="#pops" class="nav-link text-white" id="write"> Music Streaming </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white" id="write"> Video Sharing </a>
+              </li>
+              <li>
+                <a href="#pops" class="nav-link text-white" id="write"> Download Music </a>
+              </li>
+              <li>
+                <a href="https://psuuc-cvdrazo.github.io/SENSIO/" class="nav-link text-white" id="fill">About Sensio </a>
+              </li>
+
+              <li>
+                <a href="#" class="nav-link text-white" id="fill"> Setting </a>
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <ul class="nav nav-pills flex-column">
+            <li>
+              <a href="login.html" class="nav-link text-white" id="logout">
+                Log out
+              </a>
+            </li>
+          </ul>
+          <hr />
+        </div>
+        <section id="blogsec">
+          <main class="container bg-light">
+            <div
+              class="p-4 p-md-5 mb-4 rounded text-bg-dark"
+              style="
+                background-image: linear-gradient(
+                    rgb(0, 0, 0, 0.5),
+                    rgb(0, 0, 0)
+                  ),
+                  url(blog.png);
+              "
+            >
+              <div class="px-0">
+                <h1 class="display-4 fst-italic">
+                  SENSIO 
+                </h1>
+                <p class="lead my-3">
+                    Immerse yourself in the captivating world of Sensio, the ultimate music streaming and video sharing dashboard. Access a vast collection of music and videos, curated to perfection, and enjoy seamless playback across multiple devices. Discover, share, and indulge in your favorite tunes and videos like never before with Sensio. Elevate your entertainment experience today!
+                </p>
+                <p class="lead mb-0">
+                  <a
+                    href="https://psuuc-cvdrazo.github.io/SENSIO/"
+                    target="_blank"
+                    class="text-white fw-bold"
+                    >Read more...</a
+                  >
+                </p>
+                <div id="background-video">
+                    <video autoplay loop muted>
+                      <source src="vid/pexels-antoni-shkraba-5091912-1920x1080-50fps.mp4" type="video/mp4">
+                    </video>
+                  </div>
+              </div>
+            </div>
+            <div id="pop">
+                <h1>Popular Songs</h1>
+            </div>
+
+            <div class="row mb-2 border bg-tertiary ">
+              <div class="col-md-6 " >
+                <div
+                  class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-dark"
+                >
+                  <div class="col-md-5">
+                    <img
+                      src="img/cupids.jpg"
+                      alt="Article Image 1"
+                      class="img-fluid" 
+                    />
+                  </div>
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary"
+                      >Popular World Wide</strong
+                    >
+                    <h3 class="mb-0">Cupid</h3>
+                    <div class="mb-1 text-body-secondary">Song by FIFTY FIFTY
+                    </div>
+                    <p class="card-text mb-auto">
+                        Cupid is a song about love and disillusion. In the lyrics, Fifty Fifty admit they have trouble finding love: the girls feel they are fools to still believe in love, and they blame Cupid for what’s happening ...
+                    </p>
+                    <a href="https://auralcrave.com/en/2023/03/23/fifty-fifty-cupid-the-english-lyrics-the-meaning/">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <!--Blog2-->
+              <div class="col-md-6">
+                <div
+                  class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-dark"
+                >
+                  <div class="col-md-5">
+                    <img
+                      src="img/uhaw.jpeg"
+                      alt="Article Image 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-danger"
+                      >Popular</strong
+                    >
+                    <h3 class="mb-0">Uhaw in Philippines</h3>
+                    <div class="mb-1 text-body-secondary">Song by Dilaw</div>
+                    <p class="mb-auto">
+                        The song "Uhaw (Tayong Lahat)" by Dilaw tells the story of a person longing for someone they love. The lyrics describe the intense desire to be with this person, to kiss them, to dance with them in the rain.
+                    </p>
+                    <a href="https://www.songtell.com/dilaw/uhaw-tayong-lahat" class="stretched-link">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <!--Blog3-->
+              <div class="col-md-6">
+                <div
+                  class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-dark"
+                >
+                  <div class="col-md-5">
+                    <img
+                      src="img/pasilyo.png"
+                      alt="Article Image 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary"
+                      >Popular in Philippines</strong
+                    >
+                    <h3 class="mb-0">Pasilyo</h3>
+                    <div class="mb-1 text-body-secondary">song by SunKissed Lola</div>
+                    <p class="mb-auto">
+                        “Pasilyo” is directly translated into “Hallway” or “aisle” from Filipino to English. The meaning of the song “Pasilyo” lyrics by SunKissed Lola ...
+                    </p>
+                    <a href="https://laviasco.com/sunkissed-lola-pasilyo-lyrics-meaning/" class="stretched-link">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <!--Blog4-->
+              <div class="col-md-6">
+                <div
+                  class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-dark"
+                >
+                  <div class="col-md-5">
+                    <img
+                      src="img/musika.png"
+                      alt="Article Image 1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success"
+                      >Popular in Philippines</strong
+                    >
+                    <h3 class="mb-0">Musika</h3>
+                    <div class="mb-1 text-body-secondary">Dionela</div>
+                    <p class="mb-auto">
+                        It's a love song that hits all the right notes as he croons about his special someone. Using musical instruments as a metaphor, Dionela goes ...
+                    </p>
+                    <a href="https://nylonmanila.com/dionelas-musika-has-the-most-wholesome-origin-story/" class="stretched-link">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <div class="px-0">
+            
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 id="pops" style="color: azure;" class="pb-2 border-bottom">Artists</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(img/ed.jpg);">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ed Sheeran</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="img/ed.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>Earth</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(img/ben.png);">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ben&ben</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="img/ben.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>Pakistan</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>4d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/arthur.png');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Arthur Raymart</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="img/arthur.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>California</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <center><button class="w-10 btn btn-lg btn-warning" type="submit"> <a href="login.html" style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;" >More</a></button></center></p>
+    </div>
+  </div>
+          </div>
+        </div>
+        <div>
+            <h2 style="color: azure;" class="pb-2 border-bottom">Group Band</h2>
+              
+                  <div class="row row-cols-0 row-cols-lg-2 align-items-stretch g-4 py-5">
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(img/ivv.jpg);">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> IV of Spades</h3>
+                          <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                              <img src="img/ivv.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                              <small>Earth</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                              <small>3d</small>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(img/juan.jpg);">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">The Juans</h3>
+                          <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                              <img src="img/juan.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                              <small>Pakistan</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                              <small>4d</small>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/dec.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">December Avenue</h3>
+                          <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                              <img src="img/dec.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                              <small>California</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                              <small>5d</small>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(img/sil.jpg);">
+                          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Silent Sanctuary</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                              <li class="me-auto">
+                                <img src="img/sil.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                              </li>
+                              <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                                <small>Pakistan</small>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                                <small>4d</small>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                        </div>
+                      </div>
+                      <div>
+                        <center><button class="w-10 btn btn-lg btn-warning" type="submit"> <a href="login.html" style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;" >More</a></button></center></p>
+        </section>
+      </main>
+      
+
+      
+      
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+section.background{
+    background-image: url(AridKaleidoscopicBlacklemur-size_restricted.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+}
+.row{
+    margin-top: 10%;
+}
+.row h1{
+    color: #FFF;
+}
+.row p{
+    color: #FFF;
+}
+
+.navbar {
+    background-color: #020617;
+  }
+  
+  .navbar-brand {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+

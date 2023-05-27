@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="shortcut icon" href="img/sensio-logo.png" type="image/x-icon">
+   
+      
+        <title>SENSIO Login</title>
+
+  
+    </head>
+
+    <style>
+        section.background{
+    background-image: url(img/headphone1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+.row{
+    margin-top: 10%;
+}
+.row h1{
+    color: #FFF;
+}
+.row p{
+    color: #FFF;
+}
+
+.navbar {
+    background-color: #020617;
+  }
+  
+  .navbar-brand {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .btn{
+    background-color: #020617;
+    transition: 5s;
+  }
+
+
+  
+
+    </style>
+
+    <body>
+        
+
+   
+            <header data-bs-theme="dark">
+            <section class="navigation">
+             
+              <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" >
+                <div class="container-fluid" style="margin-left: 5%; margin-right: 5%;">
+                 
+                    <a class="navbar-brand" href="#">
+                      <img src="img/sensio-logo.png" alt="Logo" width="60" height="60" class="d-inline-block">
+                <span style="font-size: 30px; color: #ffffff; font-weight: 900;">SENSIO</span>
+                    </a>
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+          
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"  style="--bs-scroll-height: 100px;">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home" ></a>
+                      </li>
+                     
+                     
+                    </ul>
+                    <form class="d-flex" role="search">
+                     
+                      
+                    </form>
+                  </div>
+                </div>
+              </nav>
+              </section>
+              </header>
+              </section>
+              <section class="background" id="home">
+            
+
+        <div class="bg" style="
+        background-image: url(img/headphone1.jpeg);background-size: 100%; background-repeat: no-repeat; min-height: 100vh;">
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5" >
+
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold lh-1 mb-3 ">Welcome to SENSIO!</h1>
+                    <p class="col-lg-10 fs-4 "> "your ultimate destination for all things music! Step into a world where melodies, rhythms, and emotions intertwine to create an extraordinary auditory experience." </p>
+                </div>
+
+                <div class="col-md-10 mx-auto col-lg-5 mt-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me">
+                                Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-secondary" type="submit">    <a href="dashboards.html" style="text-decoration: none; color: rgb(255, 255, 255);">Sign in</a></button> <br>
+                        <a href="forgotpass.html">Forgot password?</a>
+
+                        <div class="text-center">
+                            <p style="color: rgb(93, 93, 93);">or sign in with:</p>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit">
+                              <img src="img/glogo.png" alt="" height="25px" />
+                              <a href="dashboards.html" style="text-decoration: none; color: white"
+                                >Sign in with Google</a
+                              >
+                            </button>
+                          </div>
+
+                        <hr class="my-2">
+                      
+                        <small class="text-body-secondary">By clicking Sign in, you agree to the terms of use.</small>
+                        <hr class="my-4">
+                        <p class="text-body-secondary" style="text-align: center;">Don't have account? click Sign Up. 
+                        <center><button class="w-10 btn btn-lg btn-secondary" type="submit"> <a href="signup.html" style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;" >Sign Up</a></button></center></p>
+                        <hr class="my-4">
+      
+                        <small class="text-body-secondary">©Sensio 2022–2023.</small>
+                    </form>
+
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+</html>
