@@ -11,6 +11,9 @@
             <title>Forgot Password</title>
 
         <style>
+            body{
+                color: azure;
+            }
             .row{
         margin-top: -2%;
     }
@@ -85,42 +88,54 @@
                         <p style="color: azure;" class="col-lg-10 fs-4 ">Enter your email address to receive a verification code and gain the ability to reset your password securely. Take control of your account by updating your password with ease. </p>
                     </div>
                     <div class="col-md-10 mx-auto col-lg-5 mt-5">
-                        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                            <small class="text-body-secondary"> Enter your email address.</small>
+
+                        <form id="recover">
+                            <p class="text-body-light"> Enter your email address.</p>
+
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Email address</label>
+                                <label for="floatingInput" style="color: black;">Email address</label>
                             </div>
+
                             <button class="w-100 btn btn-lg btn-dark mb-3" type="submit">Get recovery code.</button>
-                            <p class="text-body-secondary"> We will sending a recovery code to your email.</p>
+
+                        </form>
+
+
+                            <p class="text-body-light" style="text-align: center; font-size: small;">We will sending a recovery code to your email.</p>
                             
+                            <form id="digitcode">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">6 Digit code</label>
+                                <input type="digit" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput" style="color: black;">6 Digit code</label>
                             </div>
                             <button class="w-100 btn btn-lg btn-dark " type="submit">Verify</button>
+
+                        </form>
+
+                        <form id="newpassword">
                             <hr class="my-3">
-                            <p class="text-body-secondary"> Create new password.</p>
+                            <p class="text-body-light"> Create new password.</p>
                             <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                                <label for="floatingPassword"> New Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <label for="floatingPassword" style="color: black;"> New Password</label>
                             </div>
                             
                             <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                                <label for="floatingPassword"> Confirm Password</label>
+                                <input type="confirmpassword" class="form-control" id="confirmpassword" placeholder="Password">
+                                <label for="floatingPassword" style="color: black;"> Confirm Password</label>
                             </div>
                         
-                            <center><button class="w-10 btn btn-lg btn-dark" type="submit"> <a href="login.html" style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;" >Confirm</a></button></center></p>
-
-                        
+                            <center><button class="w-10 btn btn-lg btn-dark" type="submit"> <a style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;" >Confirm</a></button></center></p>
+                     
                         </form>
+                        
 
                     </div>
                 
                 </div>
             </div>
         </div>
-
+        <script src="forscript.js"></script>
         </body>
     </html>
