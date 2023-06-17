@@ -53,6 +53,74 @@
     height: 100%;
     object-fit: cover;
   }
+  
+  #myFrame {
+      display: none;
+    }
+
+    #myFrame2 {
+      display: none;
+    }
+    #myFrame3 {
+      display: none;
+    }
+    #myFrame4 {
+      display: none;
+    }
+    .lyrics {
+            display: none;
+        }
+        .lyrics2 {
+      display: none;
+    }
+    .lyrics3 {
+      display: none;
+    }
+    .lyrics4 {
+      display: none;
+    }
+
+    .comment-section {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+        .comment-form button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .comment-list {
+            margin-top: 20px;
+        }
+
+        .comment {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .comment .author {
+            font-weight: bold;
+        }
+
+        .comment .timestamp {
+            font-style: italic;
+            font-size: 12px;
+            color: #999;
+        }
 
   </style>
   <body>
@@ -93,6 +161,7 @@
         </ul>
 
         <!-- Search Bar -->
+
         <form class="d-flex ">
           <input
             class="form-control me-2"
@@ -128,30 +197,24 @@
                 <a href="#" class="nav-link text-white" id="write"> Home </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white" id="fill"> Search </a>
-              </li>
-              <li>
                 <a href="#pop" class="nav-link text-white" id="fill"> Discover </a>
               </li>
               <li>
                 <a href="#pops" class="nav-link text-white" id="fill"> Albums </a>
               </li>
               <li>
-                <a href="#pops" class="nav-link text-white" id="write"> Music Streaming </a>
+                <a href="#pops" class="nav-link text-white" id="write"> Artist </a>
               </li>
               <li>
                 <a href="#" class="nav-link text-white" id="write"> Video Sharing </a>
               </li>
               <li>
-                <a href="#pops" class="nav-link text-white" id="write"> Download Music </a>
+                <a href="#chatsz" class="nav-link text-white" id="write"> Chat Box </a>
               </li>
               <li>
                 <a href="https://psuuc-cvdrazo.github.io/SENSIO/" class="nav-link text-white" id="fill">About Sensio </a>
               </li>
 
-              <li>
-                <a href="#" class="nav-link text-white" id="fill"> Setting </a>
-              </li>
             </ul>
           </div>
           <hr />
@@ -198,6 +261,7 @@
                   </div>
               </div>
             </div>
+
             <div id="pop">
                 <h1>Popular Songs</h1>
             </div>
@@ -213,6 +277,7 @@
                       alt="Article Image 1"
                       class="img-fluid" 
                     />
+                    
                   </div>
                   <div class="col p-4 d-flex flex-column position-static">
                     <strong class="d-inline-block mb-2 text-primary"
@@ -225,6 +290,153 @@
                         Cupid is a song about love and disillusion. In the lyrics, Fifty Fifty admit they have trouble finding love: the girls feel they are fools to still believe in love, and they blame Cupid for what’s happening ...
                     </p>
                     <a href="https://auralcrave.com/en/2023/03/23/fifty-fifty-cupid-the-english-lyrics-the-meaning/">Read more</a>
+                    <br>
+                    <button onclick="toggleFrame()">Play</button>
+  
+                    <div id="myFrameContainer">
+                      <iframe id="myFrame" src="https://mnuu.nu/player/#vzNJtjUVeSw" frameborder="0" height="315" scrolling="no" width="100%"></iframe>
+                    </div>
+
+                    <br>
+                    <button id="showButton">Show Lyrics</button>
+                    
+                    <div class="lyrics">
+                        <!-- Lyrics content here -->
+                        <b>"Cupid"</b><br>
+                        <br>
+                        <div>
+                        <i>[Romanized:]</i><br>
+                        <br>
+                        La, la, la, la-la-la<br>
+                        La, la-la-la, la, la-la-la<br>
+                        <br>
+                        Bulkkeojin romantic all my life<br>
+                        Nae juwineun ontong lovely day<br>
+                        Nae nun soge bichin arrow sign<br>
+                        (Oh why, oh why, oh why, oh why?)<br>
+                        <br>
+                        I'm feeling lonely (Lonely)<br>
+                        Geuman hilkkeutdaego malhaejwoyo hold me (Hold me)<br>
+                        Dasi crying in my room<br>
+                        Sumgigo sipeo (Say what you say, but I want it more)<br>
+                        But still I want it more, more, more<br>
+                        <br>
+                        I gave a second chance to Cupid<br>
+                        Neol mideun naega jeongmal stupid<br>
+                        Boyeojulge sumgyeowatdeon love, is it real?<br>
+                        Cupid is so dumb<br>
+                        <br>
+                        Tto kkumgireul geonneun every day<br>
+                        Nun tteumyeon dasi tto flew away<br>
+                        Waiting around is a waste (Waste)<br>
+                        Na soljiki jigeumi pyeonhae<br>
+                        Sangsangmankeum jjarithan geolkka?<br>
+                        <br>
+                        Now I'm so lonely (Lonely)<br>
+                        Maeil kkumsogeseo yeonseupaetjyo kiss me (Kiss me)<br>
+                        Dasi crying in my room<br>
+                        Pogihalkkabwa (Say what you say, but I want it more)<br>
+                        But still I want it more, more, more<br>
+                        <br>
+                        I gave a second chance to Cupid<br>
+                        Neol mideun naega jeongmal stupid<br>
+                        Boyeojulge sumgyeowatdeon love, is it real?<br>
+                        Cupid is so dumb<br>
+                        <br>
+                        I'm so lonely, hold me tightly<br>
+                        Jjarithan geol wonhae who will really love me truly<br>
+                        Naege gidarimeun eopseo I can't wait<br>
+                        Deoneun mitji ana now I'm gonna make it mine<br>
+                        Love is a light, I'ma show my love is right<br>
+                        It's not a joke, so give it to me right now<br>
+                        No more chance to you<br>
+                        You know, hey, d-d-d-dumb boy<br>
+                        <br>
+                        Kkumsoge maeil bam<br>
+                        Someone who will share this feeling<br>
+                        I'm a fool<br>
+                        A fool for love, a fool for love<br>
+                        <br>
+                        I gave a second chance to Cupid<br>
+                        Neol mideun naega jeongmal stupid<br>
+                        Boyeojulge sumgyeowatdeon love, is it real?<br>
+                        Cupid is so dumb<br>
+                        I gave a second chance to Cupid<br>
+                        (Hopeless girl is seeking)<br>
+                        Neol mideun naega jeongmal stupid<br>
+                        (Someone who will share this feeling)<br>
+                        Dasi hanbeon mot deureun cheok gihoereul julge<br>
+                        (I'm a fool)<br>
+                        Cupid is so dumb<br>
+                        (A fool for love, a fool for love)<br>
+                        <br>
+                        <i>[Korean:]</i><br>
+                        <br>
+                        La, la, la, la-la-la<br>
+                        La, la-la-la, la, la-la-la<br>
+                        <br>
+                        불꺼진 romantic all my life<br>
+                        내 주위는 온통 lovely day<br>
+                        내 눈 속에 비친 arrow sign<br>
+                        (Oh why, oh why, oh why, oh why?)<br>
+                        <br>
+                        I'm feeling lonely (Lonely)<br>
+                        그만 힐끗대고 말해줘요 hold me (Hold me)<br>
+                        다시 crying in my room<br>
+                        숨기고 싶어 (Say what you say, but I want it more)<br>
+                        But still I want it more, more, more<br>
+                        <br>
+                        I gave a second chance to Cupid<br>
+                        널 믿은 내가 정말 stupid<br>
+                        보여줄게 숨겨왔던 love, is it real?<br>
+                        Cupid is so dumb<br>
+                        <br>
+                        또 꿈길을 걷는 every day<br>
+                        눈 뜨면 다시 또 flew away<br>
+                        Waiting around is a waste (Waste)<br>
+                        나 솔직히 지금이 편해<br>
+                        상상만큼 짜릿한 걸까?<br>
+                        <br>
+                        Now I'm so lonely (Lonely)<br>
+                        매일 꿈속에서 연습했죠 kiss me (Kiss me)<br>
+                        다시 crying in my room<br>
+                        포기할까봐 (Say what you say, but I want it more)<br>
+                        But still I want it more, more, more<br>
+                        <br>
+                        I gave a second chance to Cupid<br>
+                        널 믿은 내가 정말 stupid<br>
+                        보여줄게 숨겨왔던 love, is it real?<br>
+                        Cupid is so dumb<br>
+                        <br>
+                        I'm so lonely, hold me tightly<br>
+                        짜릿한 걸 원해 who will really love me truly<br>
+                        내게 기다림은 없어 I can't wait<br>
+                        더는 믿지 않아 now I'm gonna make it mine<br>
+                        Love is a light, I'ma show my love is right<br>
+                        It's not a joke, so give it to me right now<br>
+                        No more chance to you<br>
+                        You know, hey, d-d-d-dumb boy<br>
+                        <br>
+                        꿈속에 매일 밤<br>
+                        Someone who will share this feeling<br>
+                        I'm a fool<br>
+                        A fool for love, a fool for love<br>
+                        <br>
+                        I gave a second chance to Cupid<br>
+                        널 믿은 내가 정말 stupid<br>
+                        보여줄게 숨겨왔던 love, is it real?<br>
+                        Cupid is so dumb<br>
+                        I gave a second chance to Cupid<br>
+                        (Hopeless girl is seeking)<br>
+                        널 믿은 내가 정말 stupid<br>
+                        (Someone who will share this feeling)<br>
+                        다시 한번 못 들은 척 기회를 줄게<br>
+                        (I'm a fool)<br>
+                        Cupid is so dumb<br>
+                        (A fool for love, a fool for love)
+                        </div>
+                    </div>
+                  
                   </div>
                 </div>
               </div>
@@ -244,12 +456,78 @@
                     <strong class="d-inline-block mb-2 text-danger"
                       >Popular</strong
                     >
-                    <h3 class="mb-0">Uhaw in Philippines</h3>
+                    <h3 class="mb-0">Uhaw</h3>
                     <div class="mb-1 text-body-secondary">Song by Dilaw</div>
                     <p class="mb-auto">
                         The song "Uhaw (Tayong Lahat)" by Dilaw tells the story of a person longing for someone they love. The lyrics describe the intense desire to be with this person, to kiss them, to dance with them in the rain.
                     </p>
-                    <a href="https://www.songtell.com/dilaw/uhaw-tayong-lahat" class="stretched-link">Read more</a>
+                    <a href="https://www.songtell.com/dilaw/uhaw-tayong-lahat">Read more</a>
+                    <br>
+                    <button onclick="toggleFrame2()">Play</button>
+                    <div id="myFrameContainer2">
+                      <iframe id="myFrame2" src="https://mnuu.nu/player/#9a6kQJQrCCA" frameborder="0" height="315" scrolling="no" width="100%"></iframe>
+                    </div>
+                    <br>
+                    <button id="showLyricsBtn2">Show Lyrics</button>
+                    
+                    <div class="lyrics2">
+                      <br>
+                      <br>
+                      <b>"Uhaw"</b><br>
+                        <br>
+                      Sabik na mahalikan<br>
+                      Mayakap ka't masayaw sa ulan<br>
+                      Ang mundo'y gagaan<br>
+                      Mundo ko'y gagaan<br>
+                      Maligaw man ng landas ay<br>
+                      Hahanapin ang kalsada<br>
+                      Patungo sa'yo<br>
+                      Ikaw ang daan<br>
+                      <br>
+                      Dumilim man ang paligid<br>
+                      Ay ikaw pa din ang ilaw ko<br>
+                      Oh-oh-oh-oh-oh<br>
+                      Oh-oh-oh-oh-oh<br>
+                      <br>
+                      Bakit uhaw sa'yong sayaw, bakit ikaw?<br>
+                      'Di bibitaw, sa'yong-sayo, laging ikaw<br>
+                      Ako'y giniginaw, halika rito<br>
+                      Dito ka lang sa tabi ko<br>
+                      Mananatiling uhaw, uhaw, uhaw<br>
+                      <br>
+                      Hindi na mapakali<br>
+                      Puso'y nagmamadaling<br>
+                      Lambingin at suyuin ka<br>
+                      Oh, aking giliw, ako'y iyo<br>
+                      Kahit na matalisod, mapagod<br>
+                      At bumigay ang tuhod<br>
+                      'Di ako hihinto<br>
+                      Ikaw aking dulo<br>
+                      <br>
+                      Mawala man ang anino<br>
+                      Nandito ka, oh, ilaw ko<br>
+                      Oh-oh-oh-oh-oh<br>
+                      Oh-oh-oh-oh-oh<br>
+                      <br>
+                      Bakit uhaw sa'yong sayaw, bakit ikaw? (Bakit ikaw?)<br>
+                      'Di bibitaw, sa'yong-sayo, laging ikaw<br>
+                      Ako'y giniginaw, halika rito<br>
+                      Dito ka lang sa tabi ko<br>
+                      Mananatiling uhaw, uhaw, uhaw<br>
+                      <br>
+                      Nauuhaw, naliligaw<br>
+                      Nanliligaw, humihiyaw<br>
+                      Nalulunod sa kada taludtod ng pagkatao mo<br>
+                      Nakakatulalang tula, bawat bigkas ng labi mo<br>
+                      Nauuhaw, sumisigaw<br>
+                      <br>
+                      Bakit uhaw sa'yong sayaw, bakit ikaw?<br>
+                      'Di bibitaw, sa'yong-sayo, laging ikaw<br>
+                      Ako'y giniginaw, halika rito<br>
+                      Dito ka lang sa tabi ko<br>
+                      Mananatiling uhaw, uhaw, uhaw
+                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -274,7 +552,72 @@
                     <p class="mb-auto">
                         “Pasilyo” is directly translated into “Hallway” or “aisle” from Filipino to English. The meaning of the song “Pasilyo” lyrics by SunKissed Lola ...
                     </p>
-                    <a href="https://laviasco.com/sunkissed-lola-pasilyo-lyrics-meaning/" class="stretched-link">Read more</a>
+                    <a href="https://laviasco.com/sunkissed-lola-pasilyo-lyrics-meaning/" >Read more</a>
+                    <br>
+                    <button onclick="toggleFrame3()">Play</button>
+  
+                    <div id="myFrameContainer3">
+                      <iframe id="myFrame3" src="https://mnuu.nu/player/#XToA-1dZYWA" frameborder="0" height="315" scrolling="no" width="100%"></iframe>
+                    </div>
+                    <br>
+                    <button id="showLyricsBtn3">Show Lyrics</button>
+  
+  
+                    <div class="lyrics3">
+                      <br>
+                  
+                    <b>"Pasilyo"</b><br>
+                    <br>
+                    
+
+                      Palad ay basang-basa<br>
+                      Ang dagitab ay damang-dama<br>
+                      Sa 'king kalamnang punong-puno<br>
+                      Ng pananabik at ng kaba<br>
+                      Lalim sa 'king bawat paghinga<br>
+                      Nakatitig lamang sa iyo<br>
+                      <br>
+                      Naglakad ka nang dahan-dahan<br>
+                      Sa pasilyo tungo sa altar ng simbahan<br>
+                      Hahagkan na't 'di ka bibitawan<br>
+                      Wala na kong mahihiling pa<br>
+                      <br>
+                      Ikaw at ikaw<br>
+                      Ikaw at ikaw<br>
+                      Ikaw at ikaw<br>
+                      Ikaw at ikaw<br>
+                      <br>
+                      'Di maikukumpara<br>
+                      Araw araw 'kong dala dala<br>
+                      Paboritong panalangin ko'y<br>
+                      Makasama ka sa pagtanda<br>
+                      Ang hiling sa Diyos na may gawa<br>
+                      Apelyido ko'y maging iyo<br>
+                      <br>
+                      Naglakad ka nang dahan-dahan<br>
+                      Sa pasilyo tungo sa 'kin at hinawakan<br>
+                      Mo ako't aking 'di napigilang<br>
+                      Maluha nang mayakap na<br>
+                      <br>
+                      Ikaw at ikaw<br>
+                      Ikaw at ikaw<br>
+                      Ikaw at ikaw<br>
+                      Ikaw at ikaw<br>
+                      <br>
+                      Ikaw at ikaw (Ikaw at ikaw)<br>
+                      Ikaw at ikaw (Ikaw at ikaw)<br>
+                      Ikaw at ikaw (Ikaw at ikaw)<br>
+                      Ikaw at ikaw (Ikaw at ikaw)<br>
+                      Ikaw at ikaw (Ikaw at ikaw)<br>
+                      <br>
+                      (Ikaw at ikaw)<br>
+                      Palad ay basang basa<br>
+                      Ang dagitab ay damang-dama<br>
+                      Sa 'king kalamnang punung-puno<br>
+                      'Di maikukumpara<br>
+                      Araw-araw 'kong dala-dala<br>
+                      Paboritong panalangin ko'y ikaw
+                    </div>
                   </div>
                 </div>
               </div>
@@ -299,7 +642,44 @@
                     <p class="mb-auto">
                         It's a love song that hits all the right notes as he croons about his special someone. Using musical instruments as a metaphor, Dionela goes ...
                     </p>
-                    <a href="https://nylonmanila.com/dionelas-musika-has-the-most-wholesome-origin-story/" class="stretched-link">Read more</a>
+                    <a href="https://nylonmanila.com/dionelas-musika-has-the-most-wholesome-origin-story/">Read more</a>
+                    <br>
+                    <button onclick="toggleFrame4()">Play</button>
+  
+                    <div id="myFrameContainer4">
+                      <iframe id="myFrame4" src="https://mnuu.nu/player/#WNkyrMV2ssY" frameborder="0" height="315" scrolling="no" width="100%"></iframe>
+                    </div>
+                    <br>
+                    <button id="showLyricsBtn4">Show Lyrics</button>
+
+                    <br>
+                  
+                    <div class="lyrics4">
+                  
+                      <b>"Musika"</b><br>
+                      <br>
+                      [Pre-Chorus]<br/>
+                      Kung oras ay nababalik lang sana<br/>
+                      Ay babalik nung una kang nakita<br/>
+                      At aking iuulat sa iyong umabot<br/>
+                      Nang walang hanggan ang storya nating dal &#x27;wa<br/>
+                      <br/>
+                      [Chorus]<br/>
+                      Ikaw lang mahal, laman ng tula<br/>
+                      Tunog ng gitara &#x27;t himig ng kanta<br/>
+                      Kumupas man ang tinig ay hindi mawawala<br/>
+                      Hiwaga mong dala, ikaw aking musika<br/>
+                      <br/>
+                      [Instrumental Break]<br/>
+                      <br/>
+                      [Chorus]<br/>
+                      Ikaw lang mahal, laman ng tula<br/>
+                      Tunog ng gitara &#x27;t himig ng kanta<br/>
+                      Kumupas man ang tinig ay hindi mawawala<br/>
+                      Hiwaga mong dala, ako ang yong musika
+                    </div>
+                  
+                  
                   </div>
                 </div>
               </div>
@@ -470,12 +850,30 @@
                       </div>
                       <div>
                         <center><button class="w-10 btn btn-lg btn-warning" type="submit"> <a href="login.html" style="text-decoration: none; color: rgb(255, 255, 255); font-size: 20px;" >More</a></button></center></p>
-        </section>
-      </main>
-      
+        
+                        <div>
+                          <h2 style="color: azure;" class="pb-2 border-bottom">Chat Box</h2>
+                            
+                          
 
-      
-      
+                          <div class="comment-section">
+                            <div class="comment-form">
+                                <h2 id="chatsz">Leave a Comment</h2>
+                                <textarea id="commentText" rows="4" cols="50" placeholder="Write your comment here..."></textarea>
+                                <br>
+                                <button id="submitBtn">Comment</button>
+                            </div>
+                    
+                            <div class="comment-list">
+                                <h2>Comments</h2>
+                                <ul id="comments"></ul>
+                            </div>
+                        </div>
+        
+                      </section>
+        
+      </main>
+
     </section>
 
     <script
@@ -483,5 +881,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="feature.js"></script>
   </body>
 </html>
