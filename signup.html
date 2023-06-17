@@ -33,31 +33,43 @@
                      <h2>Sign Up to SENSIO</h2>
                      <p>Discover a world of sensory delight. Join us today and experience something extraordinary. Sign up now!</p>
                 </div>
-                <div class="input-group mb-3">
-                    <input type="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email">
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Username">
-                </div>
-                <div class="input-group mb-3">
-                    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
-                </div>
-                <div class="input-group mb-4">
-                    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Confirm Password">
-                </div>
+                
+                <form id="signupForm">
+
+                    <div class="input-group mb-3">
+                        <input type="text" id="username"class="form-control form-control-lg bg-light fs-6" placeholder="Username">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="email" id="email" class="form-control bg-light fs-6" placeholder="Email">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="password" id="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
+                    </div>
+                    <div class="input-group mb-4">
+                        <input type="password" id="confirmpassword" class="form-control form-control-lg bg-light fs-6" placeholder="Confirm Password">
+                    </div>
 
                 <div class="input-group mb-3" >
-                    <button class="btn2 btn-lg btn-dark w-100 fs-6" onclick="location.href='register.html'">Register</button>
+                    <button class="btn btn-lg btn-secondary w-100 fs-6">Sign up</button>
                 </div>
+
+                </form>
+
+                <form id="signup">
                 <div class="input-group mb-3">
-                    <button class="btn btn-lg btn-dark w-100 fs-6" onclick="location.href='register.html'"><img src="img/glogo.png" style="width:20px" class="me-2"><small>Sign Up with Google</small></button>
+                    <button id="direct" class="btn btn-lg btn-primary w-100 fs-6"><img src="img/glogo.png" style="width:20px" class="me-2"><small>Sign Up with Google</small></button>
                 </div>
                 <div class="row">
                     <small>Already have an account? <a href="login.html">Log In</a></small>
                 </div>
+            </form>
+
           </div>
        </div> 
       </div>
     </div>
+    <script src="forscript.js"></script>
 </body>
 </html>
