@@ -36,14 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
   
   
         if (email === "" || password === "") {
-            alert("Congratulations! You have successfully logged in. You will now be redirected to the registration page.");
-            window.location.href = "register.html";
+            alert("Congratulations! You have successfully logged in. You already have a account. You will now be redirected to your Dashboard page.");
+            window.location.href = "dashboards.html";
         } else if (email === validEmail && password === validPassword) {
-          alert("Login successful! You will now be redirected to the dashboard.");
+          alert("Login successful! You will now be redirected to your dashboard.");
           window.location.href = "dashboards.html";
         } else {
           alert(
-            "Oh no! The email address or password you entered is incorrect. Please verify your credentials and try again."
+            "Oh no! it seems, The email address or password you entered is incorrect. Please verify your credentials and try again."
           );
         }
       });
