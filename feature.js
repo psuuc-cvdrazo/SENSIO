@@ -220,3 +220,85 @@ function toggleLyrics(event) {
             };
             displayComment(randomComment);
         }, 10000);
+
+
+        // feature for musiclist
+
+        var leftSongs = [
+          { name: 'Come Inside Of My Heart', author: 'Song by IV of Spades', audioSrc: 'insideof.mp3' },
+          { name: 'Uhaw', author: 'Song by Dilaw', audioSrc: 'dilaw.mp3' },
+          { name: 'Ang Huling El Bimbo', author: 'Song by Eraeserheads', audioSrc: 'elbimbo.mp3' },
+          { name: 'Habang Buhay', author: 'Song by Zack Tabudlo', audioSrc: 'habangbuhay.mp3' },
+          { name: 'Pasilyo', author: 'SunKissed Lola', audioSrc: 'pasilyo.mp3' },
+        ];
+    
+        var rightSongs = [
+          { name: 'Mahika', author: 'Song by Janine Berdin', audioSrc: 'mahika.mp3' },
+          { name: 'Cupid', author: 'Song by FIFTY FIFTY', audioSrc: 'kupido.mp3' },
+          { name: 'Ikaw Lang', author: 'Song by Nobita', audioSrc: 'ikawlang.mp3' },
+          { name: 'Dito Ka Lang', author: 'Song by Moira Dela Torre', audioSrc: 'ditokalang.mp3' },
+          { name: 'Binibini', author: 'Song by Zack Tabudlo', audioSrc: 'Binibini.mp3' },
+        ];
+    
+        function createBox(song, containerId) {
+          var box = document.createElement('div');
+          box.classList.add('boxq');
+    
+          var nameElement = document.createElement('span');
+          nameElement.classList.add('nameq');
+          nameElement.innerText = song.name;
+    
+          var authorElement = document.createElement('span');
+          authorElement.classList.add('authorq');
+          authorElement.innerText = song.author;
+    
+          var audio = document.createElement('audio');
+          audio.src = song.audioSrc;
+    
+          var playButton = document.createElement('button');
+          playButton.classList.add('play-buttonq');
+          playButton.innerText = 'Play';
+          playButton.onclick = function() {
+            toggleAudio(this, audio);
+          };
+    
+          box.appendChild(nameElement);
+          box.appendChild(authorElement);
+          box.appendChild(playButton);
+          box.appendChild(audio);
+    
+          document.getElementById(containerId).appendChild(box);
+        }
+    
+        function toggleAudio(button, audio) {
+          if (audio.paused) {
+            stopAllAudio(); // Stop other audio if playing
+            audio.play();
+            button.innerText = 'Stop';
+          } else {
+            audio.pause();
+            audio.currentTime = 0;
+            button.innerText = 'Play';
+          }
+        }
+    
+        function stopAllAudio() {
+          var audioElements = document.getElementsByTagName('audio');
+          var playButtons = document.getElementsByClassName('play-buttonq');
+    
+          for (var i = 0; i < audioElements.length; i++) {
+            audioElements[i].pause();
+            audioElements[i].currentTime = 0;
+            playButtons[i].innerText = 'Play';
+          }
+        }
+    
+        // Create boxes dynamically for left container
+        for (var i = 0; i < leftSongs.length; i++) {
+          createBox(leftSongs[i], 'left-container');
+        }
+    
+        // Create boxes dynamically for right container
+        for (var i = 0; i < rightSongs.length; i++) {
+          createBox(rightSongs[i], 'right-container');
+        }
